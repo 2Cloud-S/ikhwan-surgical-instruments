@@ -128,4 +128,5 @@ All rights reserved.
 
 ## Contact
 
-For inquiries, please contact [your-email@example.com]
+For inquiries, please contact 
+inbox.afnankhan@gmail.com
