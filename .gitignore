@@ -1,0 +1,83 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Production build
+dist
+dist-ssr
+build
+.next
+out
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env*.local
+.env.local
+.env.production
+.env.development
+
+# Testing
+coverage
+.nyc_output
+
+# Cache directories
+.cache
+.parcel-cache
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+nul
+bun.lockb
+
+# Claude AI
+.claude
+
+# Issues and notes
+issues.txt
+TODO.txt
+notes.txt
+
+# Sanity
+.sanity
+
+# Package manager lock files (optional - keep only one)
+# Uncomment the ones you don't use:
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+
+# Misc
+*.bak
+*.orig
