@@ -30,7 +30,7 @@ const StoreLocator = () => {
                 <div className="space-y-2 text-muted-foreground">
                   <p>Sialkot, Pakistan</p>
                   <p>+92 370 9450436</p>
-                  <p>shakirullahzk@gmail.com</p>
+                  <p>ikhwansurgicalinstruments@gmail.com</p>
                   <p>naeemurrahmanbj@gmail.com</p>
                 </div>
                 <p className="text-sm text-muted-foreground">

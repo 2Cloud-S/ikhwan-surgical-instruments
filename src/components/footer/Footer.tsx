@@ -10,7 +10,7 @@ const Footer = () => {
   const tagline = siteSettings?.tagline || "Leaders in the Surgical Industry";
   const address = siteSettings?.address || "Sialkot, Pakistan";
   const contactPhone = siteSettings?.contactPhone || "+923709450436";
-  const contactEmail = siteSettings?.contactEmail || "shakirullahzk@gmail.com";
+  const contactEmail = siteSettings?.contactEmail || "ikhwansurgicalinstruments@gmail.com";
   const footerText = siteSettings?.footerText || `© ${new Date().getFullYear()} ${siteName}. All rights reserved. Website Created by AfnanKhan`;
 
   // Social links with defaults

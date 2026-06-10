@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <div className="mt-4 text-muted-foreground">
-                <p>Email: shakirullahzk@gmail.com</p>
+                <p>Email: ikhwansurgicalinstruments@gmail.com</p>
                 <p>Phone: +92 370 9450436</p>
                 <p>Location: Sialkot, Pakistan</p>
               </div>

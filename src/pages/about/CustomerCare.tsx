@@ -32,7 +32,7 @@ const CustomerCare = () => {
             </div>
             <div className="space-y-4">
               <h3 className="text-lg font-light text-foreground">Email</h3>
-              <p className="text-muted-foreground">shakirullahzk@gmail.com</p>
+              <p className="text-muted-foreground">ikhwansurgicalinstruments@gmail.com</p>
               <p className="text-muted-foreground">naeemurrahmanbj@gmail.com</p>
               <p className="text-sm text-muted-foreground">Response within 24 hours</p>
             </div>
