@@ -3,10 +3,10 @@ import heroSurgical from "@/assets/hero-surgical.jpg";
 
 const LargeHero = () => {
   return (
-    <section className="w-full mb-16 px-6">
+    <section className="w-full mb-10 sm:mb-16 px-4 sm:px-6">
       <Link to="/category/all">
         <div className="group relative bg-card rounded-2xl overflow-hidden shadow-xl border border-border/50 hover:shadow-2xl hover:border-border transition-all duration-500">
-          <div className="w-full aspect-[21/9] overflow-hidden relative">
+          <div className="w-full aspect-[4/3] sm:aspect-[21/9] overflow-hidden relative">
             <img
               src={heroSurgical}
               alt="Premium surgical instruments collection"
@@ -18,12 +18,12 @@ const LargeHero = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
 
             {/* Content overlay */}
-            <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-16 lg:px-24">
+            <div className="absolute inset-0 flex flex-col justify-center px-5 sm:px-8 md:px-16 lg:px-24">
               <div className="max-w-2xl">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 tracking-tight leading-tight">
                   Precision Craftsmanship
                 </h2>
-                <p className="text-base md:text-lg text-white/90 font-light mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-light mb-4 sm:mb-6 leading-relaxed">
                   Premium surgical instruments engineered for excellence. Trusted by medical professionals worldwide.
                 </p>
 
@@ -38,7 +38,7 @@ const LargeHero = () => {
             </div>
 
             {/* Decorative element */}
-            <div className="absolute top-8 right-8 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+            <div className="hidden sm:block absolute top-8 right-8 opacity-20 group-hover:opacity-30 transition-opacity duration-500">
               <div className="w-32 h-32 border-2 border-white rounded-full"></div>
             </div>
           </div>

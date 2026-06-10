@@ -16,7 +16,7 @@ const Index = () => {
         <HeroSection />
 
         {/* Spacer with decorative element */}
-        <div className="relative pt-20 pb-4">
+        <div className="relative pt-10 sm:pt-16 md:pt-20 pb-4">
           <div className="absolute top-10 left-1/2 -translate-x-1/2 w-1 h-12 bg-gradient-to-b from-border/50 to-transparent"></div>
         </div>
 

@@ -43,10 +43,10 @@ const ProductCarousel = () => {
   }
 
   return (
-    <section className="w-full mb-16 px-6">
-      <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-border/50">
-        <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-foreground mb-2">Featured Products</h2>
+    <section className="w-full mb-10 sm:mb-16 px-4 sm:px-6">
+      <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-2xl p-4 sm:p-8 shadow-xl border border-border/50">
+        <div className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-2">Featured Products</h2>
           <p className="text-sm text-muted-foreground">Handpicked instruments for precision and excellence</p>
         </div>
 

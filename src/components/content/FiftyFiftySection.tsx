@@ -7,7 +7,7 @@ const FiftyFiftySection = () => {
 
   if (isLoading) {
     return (
-      <section className="w-full mb-16 px-6">
+      <section className="w-full mb-10 sm:mb-16 px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[1, 2].map((i) => (
             <div key={i} className="bg-card rounded-xl p-4 shadow-sm border border-border/50 animate-pulse">
@@ -29,7 +29,7 @@ const FiftyFiftySection = () => {
   }
 
   return (
-    <section className="w-full mb-16 px-6">
+    <section className="w-full mb-10 sm:mb-16 px-4 sm:px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {featuredCategories.map((category, index) => {
           const categorySlug = category.slug?.current || category.name.toLowerCase().replace(/\s+/g, '-');

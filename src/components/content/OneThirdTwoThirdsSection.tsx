@@ -7,7 +7,7 @@ const OneThirdTwoThirdsSection = () => {
 
   if (isLoading) {
     return (
-      <section className="w-full mb-16 px-6">
+      <section className="w-full mb-10 sm:mb-16 px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-1 bg-card rounded-xl p-4 shadow-sm border border-border/50 animate-pulse">
             <div className="w-full h-[468px] lg:h-[768px] mb-3 bg-muted rounded-lg" />
@@ -35,12 +35,12 @@ const OneThirdTwoThirdsSection = () => {
   const [firstCategory, secondCategory] = featuredCategories;
 
   return (
-    <section className="w-full mb-16 px-6">
+    <section className="w-full mb-10 sm:mb-16 px-4 sm:px-6">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {firstCategory && (
           <div className="lg:col-span-1 group bg-card rounded-2xl overflow-hidden shadow-lg border border-border/50 hover:shadow-2xl hover:border-border transition-all duration-500">
             <Link to={`/category/${firstCategory.slug?.current || firstCategory.name.toLowerCase().replace(/\s+/g, '-')}`} className="block relative">
-              <div className="w-full h-[468px] lg:h-[768px] overflow-hidden relative">
+              <div className="w-full aspect-[4/5] sm:aspect-square lg:h-[768px] overflow-hidden relative">
                 <img
                   src={firstCategory.image || placeholderImage}
                   alt={firstCategory.name}
@@ -76,7 +76,7 @@ const OneThirdTwoThirdsSection = () => {
         {secondCategory && (
           <div className="lg:col-span-2 group bg-card rounded-2xl overflow-hidden shadow-lg border border-border/50 hover:shadow-2xl hover:border-border transition-all duration-500">
             <Link to={`/category/${secondCategory.slug?.current || secondCategory.name.toLowerCase().replace(/\s+/g, '-')}`} className="block relative">
-              <div className="w-full h-[468px] lg:h-[768px] overflow-hidden relative">
+              <div className="w-full aspect-[4/5] sm:aspect-square lg:h-[768px] overflow-hidden relative">
                 <img
                   src={secondCategory.image || placeholderImage}
                   alt={secondCategory.name}

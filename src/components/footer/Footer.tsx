@@ -26,7 +26,7 @@ const Footer = () => {
   const footerCategories = categories?.slice(0, 5).map(c => c.name) || defaultCategories;
 
   return (
-    <footer className="w-full bg-white text-black pt-8 pb-2 px-6 border-t border-[#e5e5e5] mt-48">
+    <footer className="w-full bg-white text-black pt-8 pb-2 px-4 sm:px-6 border-t border-[#e5e5e5] mt-16 sm:mt-24 lg:mt-48">
       <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
           {/* Brand - Left side */}
@@ -104,7 +104,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom section - edge to edge separator */}
-      <div className="border-t border-[#e5e5e5] -mx-6 px-6 pt-2">
+      <div className="border-t border-[#e5e5e5] -mx-4 sm:-mx-6 px-4 sm:px-6 pt-2">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm font-light text-black mb-1 md:mb-0">
             {footerText}

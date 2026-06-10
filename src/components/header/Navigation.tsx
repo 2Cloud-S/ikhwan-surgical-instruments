@@ -105,10 +105,11 @@ const Navigation = () => {
         backdropFilter: 'blur(10px)'
       }}
     >
-      <div className="flex items-center justify-between h-16 px-6">
+      <div className="flex items-center justify-between h-14 sm:h-16 px-3 sm:px-6">
         {/* Mobile hamburger button */}
+        <div className="flex items-center shrink-0 w-10 sm:w-12 lg:w-auto lg:flex-1">
         <button
-          className="lg:hidden p-2 mt-0.5 text-nav-foreground hover:text-nav-hover transition-colors duration-200"
+          className="lg:hidden p-2 -ml-1 text-nav-foreground hover:text-nav-hover transition-colors duration-200"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -124,9 +125,10 @@ const Navigation = () => {
             }`}></span>
           </div>
         </button>
+        </div>
 
         {/* Left navigation - Hidden on tablets and mobile */}
-        <div className="hidden lg:flex space-x-8">
+        <div className="hidden lg:flex space-x-8 flex-1">
           {navItems.map((item) => (
             <div
               key={item.name}
@@ -145,16 +147,17 @@ const Navigation = () => {
         </div>
 
         {/* Center logo */}
-        <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Link to="/" className="block">
-            <span className="text-sm font-semibold tracking-wide text-nav-foreground whitespace-nowrap">
-              IKHWAN SURGICAL INSTRUMENTS
+        <div className="flex-1 flex justify-center px-1 min-w-0 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:flex-none lg:px-0">
+          <Link to="/" className="block text-center">
+            <span className="text-[10px] leading-tight sm:text-xs md:text-sm font-semibold tracking-wide text-nav-foreground block sm:whitespace-nowrap">
+              <span className="sm:hidden">IKHWAN<br />SURGICAL</span>
+              <span className="hidden sm:inline">IKHWAN SURGICAL INSTRUMENTS</span>
             </span>
           </Link>
         </div>
 
         {/* Right icons */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center shrink-0 w-16 sm:w-20 lg:w-auto justify-end gap-0 sm:gap-1">
           <button 
             className="p-2 text-nav-foreground hover:text-nav-hover transition-colors duration-200"
             aria-label="Search"
@@ -337,7 +340,7 @@ const Navigation = () => {
           />
           
           {/* Off-canvas panel */}
-          <div className="absolute right-0 top-0 h-screen w-96 bg-background border-l border-border animate-slide-in-right flex flex-col">
+          <div className="absolute right-0 top-0 h-screen w-full max-w-sm sm:w-96 bg-background border-l border-border animate-slide-in-right flex flex-col">
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-border">
               <h2 className="text-lg font-light text-foreground">Your Favorites</h2>
